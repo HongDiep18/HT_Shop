@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+  <!-- 1. Header -->
+  <header id="header" class="header sticky-top py-2 bg-white border-bottom"></header>
+  <script>
+    fetch('partials/header.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('header').innerHTML = data)
+  </script>
+
+
+  <!-- 2. Slide bar / Carousel 3 ảnh -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators (dấu chấm dưới) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="assets/img/slidebar/banner.jpg" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Tiêu đề Slide 1</h5>
+          <p>Mô tả slide 1</p> -->
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="assets/img/slidebar/banner2.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Tiêu đề Slide 2</h5>
+          <p>Mô tả slide 2</p> -->
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="assets/img/slidebar/banner3.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h5>Tiêu đề Slide 3</h5>
+          <p>Mô tả slide 3</p> -->
+        </div>
+      </div>
+    </div>
+    <!-- Controls (nút qua lại) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- 3. Sản phẩm nữ mới nhất -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="mb-4 text-center text-success">SẢN PHẨM NỮ MỚI NHẤT</h4>
+
+      <div class="position-relative" id="product-female">
+
+        <!-- Nút mũi tên trái -->
+        <button class="carousel-control-prev custom-prev" type="button">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Vùng scroll -->
+        <div class="product-slider" style="overflow-x: auto; scroll-behavior: smooth;">
+          <div class="product-list d-flex flex-nowrap">
+
+            <!-- Card sản phẩm -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/GHT_0157.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/GHT_0151.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class=" card-body">
+                <h5 class="card-title">Dép quai nhún đen|kem 8700</h5>
+                <p class="card-text text-danger fw-bold">280.000đ</p>
+              </div>
+            </div>
+
+            <!-- Copy thêm các card khác -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/GHT_0110.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/GHT_0105.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class=" card-body">
+                <h5 class="card-title">Búp Bê Xuồng 7F 8683 Đen|Bò</h5>
+                <p class="card-text text-danger fw-bold">330.000đ</p>
+              </div>
+            </div>
+
+            <!-- Copy thêm các card khác -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/IMG_1783.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/IMG_1778.jpg" class="card-img-top back" alt="...">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Sandal nữ quai mảnh đen|kem 5807</h5>
+                <p class="card-text text-danger fw-bold">190.000đ</p>
+              </div>
+            </div>
+
+
+            <!-- Copy thêm các card khác -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/sportyboot.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/sportyboot.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class=" card-body">
+                <h5 class="card-title">Sporty Boot Đế Cao 5F 8339</h5>
+                <p class="card-text text-danger fw-bold">390.000đ</p>
+              </div>
+            </div>
+
+            <!-- Copy thêm các card khác -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/sportyboot.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/sportyboot.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class=" card-body">
+                <h5 class="card-title">Sporty Boot Đế Cao 5F 8339</h5>
+                <p class="card-text text-danger fw-bold">390.000đ</p>
+              </div>
+            </div>
+
+            <!-- Copy thêm các card khác -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/sportyboot.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/sportyboot.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class=" card-body">
+                <h5 class="card-title">Sporty Boot Đế Cao 5F 8339</h5>
+                <p class="card-text text-danger fw-bold">390.000đ</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nút mũi tên phải -->
+        <button class="carousel-control-next custom-next" type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 4. Slides 2 ảnh -->
+  <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel2" data-bs-slide-to="1"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/slidebar/bannerNam.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slidebar/bannerNam2.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel2" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- 5. Sản phẩm nam -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="mb-4 text-center text-success">SẢN PHẨM NAM MỚI NHẤT</h4>
+
+      <div class="position-relative" id="product-male">
+
+        <!-- Nút mũi tên trái -->
+        <button class="carousel-control-prev custom-prev" type="button">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Vùng scroll -->
+        <div class="product-slider" style="overflow-x: hidden;">
+          <div class="product-list d-flex flex-nowrap">
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Dép Yl-8626</h5>
+                <p class="card-text text-danger fw-bold">200.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0656.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0657.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Tây Xỏ Ne-8616</h5>
+                <p class="card-text text-danger fw-bold">500.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0686.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0687.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Dép Gd-8607</h5>
+                <p class="card-text text-danger fw-bold">450.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0751.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0753.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+
+              <div class="card-body">
+                <h5 class="card-title">Cao Ka-8602</h5>
+                <p class="card-text text-danger fw-bold">700.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0704.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0705.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Kẹp Yl-8625</h5>
+                <p class="card-text text-danger fw-bold">250.000đ</p>
+              </div>
+            </div>
+
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0733.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0734.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Dép Ac-8490
+                </h5>
+                <p class="card-text text-danger fw-bold">350.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm Nam -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0645.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0646.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Couple Sporty Sandal 8585 Nam</h5>
+                <p class="card-text text-danger fw-bold">300.000đ</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nút mũi tên phải -->
+        <button class="carousel-control-next custom-next" type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Slide với một ảnh  -->
+  <div id="myCarousel3" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarouselSingle" data-bs-slide-to="0" class="active"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/slidebar/bannerSlide3.jpg" class="d-block w-100" alt="Slide Only One">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- Nội dung caption nếu có -->
+          <!-- <h5>Tiêu đề Slide</h5>
+          <p>Mô tả slide duy nhất</p> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Không cần nút prev/next nếu chỉ 1 ảnh -->
+    <!-- Nếu vẫn muốn có nút thì giữ -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarouselSingle" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarouselSingle" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- 7. Sản phẩm khuyến mãi -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="mb-4 text-center text-success">SẢN PHẨM KHUYẾN MÃI</h4>
+
+      <div class="position-relative" id="product-sale">
+        <!-- Nút mũi tên trái -->
+        <button class="carousel-control-prev custom-prev" type="button">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Vùng scroll -->
+        <div class="product-slider" style="overflow-x: hidden;">
+          <div class="product-list d-flex flex-nowrap">
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+            <div class="card me-3 position-relative" style="min-width: 230px;">
+              <!-- TAG GIẢM -->
+              <div class="discount-tag">-18%</div>
+
+              <!-- Ảnh flip -->
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nam/GHT_0674.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nam/GHT_0675.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <!-- Nội dung -->
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">DÉP KH-7380</h6>
+                <span class="fw-bold text-danger">260.000 đ</span>
+                <small class="text-decoration-line-through text-danger ">(360.000 đ)</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nút mũi tên phải -->
+        <button class="carousel-control-next custom-next" type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8. Sildes 3 ảnh-->
+  <div id="myCarousel4" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel4" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel4" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel4" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/slidebar/bannerSlide4.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slidebar/bannerSlide4_1.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slidebar/bannerSlide4_2.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel4" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel4" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+  <!-- 9. Sản phẩm bán chạy nhất -->
+  <section class="py-5">
+    <div class="container">
+      <h4 class="mb-4 text-center text-success"> BÁN CHẠY NHẤT</h4>
+
+      <div class="position-relative" id="product-trend">
+
+        <!-- Nút mũi tên trái -->
+        <button class="carousel-control-prev custom-prev" type="button">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Vùng scroll -->
+        <div class="product-slider" style="overflow-x: hidden;">
+          <div class="product-list d-flex flex-nowrap">
+
+            <!-- Card sản phẩm bán chạy nhất -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/1.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/IMG_2750.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Sandal đính đá Gót Pha Lê Cao 7F 8363 Đen|Bạc</h5>
+                <p class="card-text text-danger fw-bold">370.000đ</p>
+              </div>
+            </div>
+
+
+            <!-- Card sản phẩm bán chạy nhất -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/GHT_0179.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/GHT_0176.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Dép mules mềm cao 4F 8662</h5>
+                <p class="card-text text-danger fw-bold">390.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm bán chạy nhất -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/471.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/IMG_8563.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+
+                  Sandal Đế bằng dây đan Màu kem 8189</h5>
+                <p class="card-text text-danger fw-bold">250.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm bán chạy nhất -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/471.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/IMG_8563.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+
+                  Sandal Đế bằng dây đan Màu kem 8189</h5>
+                <p class="card-text text-danger fw-bold">250.000đ</p>
+              </div>
+            </div>
+
+
+            <!-- Card sản phẩm bán chạy nhất -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/471.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/IMG_8563.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+
+                  Sandal Đế bằng dây đan Màu kem 8189</h5>
+                <p class="card-text text-danger fw-bold">250.000đ</p>
+              </div>
+            </div>
+
+            <!-- Card sản phẩm bán chạy nhất -->
+            <div class="card me-3" style="min-width: 230px;">
+              <div class="flip-box">
+                <div class="flip-inner">
+                  <img src="assets/img/product/SP_Nu/471.jpg" class="card-img-top front" alt="...">
+                  <img src="assets/img/product/SP_Nu/IMG_8563.jpg" class="card-img-top back">
+                </div>
+              </div>
+
+              <!-- Màu sắc -->
+              <div class="d-flex justify-content-center my-2">
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#000; margin:0 4px;"></span>
+                <span
+                  style="display:inline-block; width:12px; height:12px; border-radius:50%; background:#ddd; margin:0 4px;"></span>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">
+
+                  Sandal Đế bằng dây đan Màu kem 8189</h5>
+                <p class="card-text text-danger fw-bold">250.000đ</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nút mũi tên phải -->
+        <button class="carousel-control-next custom-next" type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 10. Slide 1 ảnh thu gọn -->
+  <!-- //5 card: 230 * 5 + 16 * 4 ≈ 1225px -->
+  <div class="container p-0" style="max-width: 1225px; overflow: hidden;">
+    <div id="myCarousel5" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel5" data-bs-slide-to="0" class="active"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/slidebar/bannerSlide5.png" class="d-block w-100" alt="Slide Only One">
+        </div>
+      </div>
+
+      <!-- Nếu cần nút -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel5" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel5" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <!-- JS kéo sp -->
+  <script>
+    // Hàm chung cho 1 slider
+    function createProductSlider(wrapperId) {
+      const wrapper = document.querySelector(wrapperId);
+      const productList = wrapper.querySelector('.product-list');
+      const prevBtn = wrapper.querySelector('.custom-prev');
+      const nextBtn = wrapper.querySelector('.custom-next');
+
+      const cardWidth = 230;
+      const cardMargin = 20;
+      const visibleCards = 5;
+      const totalCards = productList.children.length;
+
+      let currentIndex = 0;
+
+      prevBtn.addEventListener('click', () => {
+        currentIndex--;
+        if (currentIndex < 0) currentIndex = totalCards - visibleCards;
+        updateSlider();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex++;
+        if (currentIndex > totalCards - visibleCards) currentIndex = 0;
+        updateSlider();
+      });
+
+      function updateSlider() {
+        const translateX = -(currentIndex * (cardWidth + cardMargin));
+        productList.style.transform = `translateX(${translateX}px)`;
+      }
+    }
+
+    // Gọi cho NAM
+    createProductSlider('#product-male');
+
+    // Gọi cho NỮ
+    createProductSlider('#product-female');
+
+    //Gọi cho sale
+    createProductSlider('#product-sale')
+
+    //Gọi cho bán chạy
+    createProductSlider('#product-trend');
+  </script>
+  <!--  -->
+
+
+  <!-- 11. Footer -->
+  <footer id="footer" class="bg-light pt-4 border-top mt-4"> </footer>
+
+  <script>
+    fetch('partials/footer.html')
+      .then(res => res.text())
+      .then(data => document.getElementById('footer').innerHTML = data)
+  </script>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <script src="assets/js/header.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

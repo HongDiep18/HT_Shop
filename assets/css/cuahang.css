@@ -1,0 +1,190 @@
+/*  */
+
+
+/* sản phẩm */
+/* Xử lý khi tên sp quá dài */
+/* Ẩn bớt tên nếu quá dài */
+.product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* Cho phép tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3em;
+    /* ~2 dòng, tùy font-size */
+}
+
+/* Bắt buộc height cố định cho card */
+.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-wrapper {
+    flex: 0 0 auto;
+}
+
+.product-info {
+    flex: 1 0 auto;
+    /* để phần info luôn co giãn đều */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Hover đổi ảnh */
+.product-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-hover-image {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product-card:hover .product-hover-image {
+    opacity: 1;
+}
+
+/* Nút Đặt hàng - ẩn mặc định */
+.buy-btn {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.product-card:hover .buy-btn {
+    opacity: 1;
+}
+
+/* ===== LIST VIEW ===== */
+
+/* Chiếm toàn hàng */
+.products-wrapper.list-view .col-6,
+.products-wrapper.list-view .col-md-4,
+.products-wrapper.list-view .col-lg-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Card list view = dạng dòng */
+.products-wrapper.list-view .product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Ảnh to ở list view */
+.products-wrapper.list-view .product-image-wrapper {
+    flex: 0 0 auto;
+    width: 425px;
+    height: 425px;
+}
+
+.products-wrapper.list-view .product-image,
+.products-wrapper.list-view .product-hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nội dung bên phải */
+.products-wrapper.list-view .product-info {
+    flex: 1;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Nút ban đầu ẩn */
+.products-wrapper.list-view .buy-btn {
+    display: none;
+    margin-top: 1rem;
+}
+
+/* Hover thì nút hiện ra */
+.products-wrapper.list-view .product-card:hover .buy-btn {
+    display: inline-flex;
+}
+
+/* Bỏ justify-content giữa grid/list view */
+.product-info {
+    position: relative;
+}
+
+.products-wrapper:not(.list-view) .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.product-card {
+    transition: box-shadow 0.3s;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Columns */
+@media (max-width: 576px) {
+    .products-wrapper .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .products-wrapper .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .products-wrapper .col-md-4 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .products-wrapper .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* Dạng đóng mở */
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+a.text-success:hover {
+    color: rgb(248, 71, 71) !important;
+}
+
+a.nav-link {
+    animation: color 0.2s ease;
+}
+
+a.nav-link:hover {
+    color: rgb(248, 71, 71);
+
+}
